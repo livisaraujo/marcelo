@@ -6,7 +6,7 @@ import styles from '../../styles/Menu.module.css'
 
 export default function Menu() {
   return (
-    <Navbar expand="lg"  bg="dark" data-bs-theme="dark" className={`${styles.degradeMenu}`}>
+    <Navbar expand="lg" className={`${styles.degradeMenu}`}>
       <Container>
         <Navbar.Brand href="/">Info 5C</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -14,6 +14,7 @@ export default function Menu() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/esportes">Esportes</Nav.Link>
+            <Nav.Link href="/usestate">UseState</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

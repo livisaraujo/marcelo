@@ -10,16 +10,17 @@ export default function Usestat() {
             </p>
             <button
                 className="btn btn-success"
-                onClick={async() => {setCount(await addOne(count))}}>Add Count</button>
+                onClick={async () => { setCount(await addOne(count)) }}>
+                Add Count
+            </button>
         </Container>
     </>
 }
-
 function addOne(count) {
     count++;
-    return new Promise((promessa)=>{
+    return new Promise((promessa) => {
         setTimeout(() => {
-            promessa(count)
-        }, 1000);
+            promessa(count);
+        }, 5000);
     })
 }

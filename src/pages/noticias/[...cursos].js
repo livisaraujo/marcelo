@@ -3,12 +3,14 @@ export default function Cursos() {
   const router = useRouter()
   const curso = router.query.cursos;
   return <>
-    <p className='text-center'>Cursos:</p>
+    
     <div className='text-center'>
-      {Array.isArray(curso) ? (
-        curso.map((valor, indice) => (
-          <div key={indice}>Posição: {indice}, Valor: {valor}</div>
-        ))) : (<div className='text-center'>Vetor não carregado</div>)}
+      <h1>Rota Dinâmica Vetor</h1>
+      {Array.isArray(curso) 
+      ? (curso.map((valor, indice) => (
+          <div key={indice}>Posição: <b>{indice}</b>, Valor: <b>{valor}</b></div>
+        ))) 
+        : (<div className='text-center'>Vetor não carregado</div>)}
     </div>
   </>
 }

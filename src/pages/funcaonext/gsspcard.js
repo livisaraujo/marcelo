@@ -7,29 +7,24 @@ export default function Gsspcard({ repo }) {
     return (
         <>
             <Container>
-                <h1>{repo.var1}</h1>
-                <h1>{repo.var2}</h1>
-            </Container>
-            <Container>
-                {Array.isArray(noticias) ?
-                    noticias.map(abobrinha =>
-                        <Row xs={1} md={2} className="g-4">
-                            <Col key={2}>
-                                <Card style={{ width: '18rem' }}>
-                                    <Card.Body>
-                                        <Card.Title>{abobrinha.idnoticia} - {abobrinha.titulonoticia} </Card.Title>
-                                        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                                        <Card.Text>
-                                            {abobrinha.conteudonoticia}
-                                        </Card.Text>
-                                        <Card.Link href="#">{abobrinha.tiponoticia}</Card.Link>
-                                        <Card.Link href="#">{abobrinha.datahoracadastro}</Card.Link>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
+                <Row xs={1} md={3} className="g-4 pt-2">
+                    {Array.from({ length: noticias.length }).map((_, idx) => (
+                        <Col key={idx}>
+                            <Card>
+                                <Card.Header className="text-center fw-bold">{noticias[idx].titulonoticia}</Card.Header>
+                                <Card.Body>
+                                    <Card.Title className="text-capitalize">{noticias[idx].tiponoticia}</Card.Title>
+                                    <Card.Text>
+                                        {noticias[idx].conteudonoticia}
+                                    </Card.Text>
+                                    <Card.Subtitle className="mb-2">{noticias[idx].noticiatipo}</Card.Subtitle>
+                                </Card.Body>
+                                <Card.Footer className="fst-italic">{new Date(noticias[idx].datahoracadastro).toLocaleString("pt-BR")}</Card.Footer>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
 
-                        </Row>
-                    ) : "Carregando"}
             </Container>
         </>
     )

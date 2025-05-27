@@ -1,5 +1,4 @@
 import { Container } from "react-bootstrap"
-
 export async function getServerSideProps() {
     // Fetch data from external API
     // const res = await fetch('https://api.github.com/repos/vercel/next.js')

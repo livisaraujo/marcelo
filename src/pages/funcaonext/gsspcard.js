@@ -14,9 +14,10 @@ export default function Gssp({ repo }) {
                                 <Card.Header className="text-center fw-bold"> {abobrinha.titulonoticia}</Card.Header>
                                 <Card.Body>
                                     <Card.Title className="text-capitalize">{abobrinha.tiponoticia}</Card.Title>
-                                    <Card.Text>{abobrinha.conteudonoticia}</Card.Text>
+                                    <Card.Text>{abobrinha.conteudonoticia}
+                                    </Card.Text>
                                 </Card.Body>
-                                <Card.Footer className="text-muted">{new Date(abobrinha.datahoracadastro).toLocaleString()}</Card.Footer>
+                                <Card.Footer className="text-muted">{new Date(abobrinha.datahoracadastro).toLocaleString("pt-BR")}</Card.Footer>
                             </Card>
                         </Col>
                     ) : <div className="text-center">

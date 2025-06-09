@@ -1,11 +1,12 @@
 import { noticias } from "./noticias";
 
-export default function handler(req, res) { 
-    res.status(200).json(noticias)
-  }
+export default function handler(req, res) {
+  res.status(200).json(noticias);
+}
 
   /*
-  
+  https://nextjs.org/learn/seo/status-codes
+
   Tipos de códigos de status HTTP:
   Códigos Informativos (1xx): Indicam que o servidor recebeu a solicitação e está processando-a.
   Códigos de Sucesso (2xx): Indicam que a solicitação foi bem-sucedida e o servidor retornou a resposta esperada.

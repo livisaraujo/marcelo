@@ -1,17 +1,17 @@
-import { Card } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 
-export default function Cards(prop) {
-    return (<>
-        <Card>
-            <Card.Header className="text-center fw-bold">{prop.titulonoticia}</Card.Header>
-            <Card.Body>
-                <Card.Title className="text-capitalize">{prop.tiponoticia}</Card.Title>
-                <Card.Subtitle className="mb-2">{prop.noticiatipo}</Card.Subtitle>
-                <Card.Text>
-                    {prop.conteudonoticia}
-                </Card.Text>
-            </Card.Body>
-            <Card.Footer className="fst-italic">{new Date(prop.datahoracadastro).toLocaleString("pt-BR")}</Card.Footer>
-        </Card>
-    </>)
+export default function Cards(noticia){
+    return <>
+        <Col key={noticia.idnoticia}>
+            <Card>
+                <Card.Header className="text-center fw-bold"> {noticia.titulonoticia}</Card.Header>
+                <Card.Body>
+                    <Card.Title className="text-capitalize">{noticia.tiponoticia}</Card.Title>
+                    <Card.Text>{noticia.conteudonoticia}
+                    </Card.Text>
+                </Card.Body>
+                <Card.Footer className="text-muted">{new Date(noticia.datahoracadastro).toLocaleString("pt-BR")}</Card.Footer>
+            </Card>
+        </Col>
+    </>
 }

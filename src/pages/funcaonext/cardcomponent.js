@@ -1,8 +1,8 @@
 import { Container, Row } from "react-bootstrap";
-import Cards from "../components/cards"
+import Cards from "./components/cards"
 
 export async function getServerSideProps() {
-    const res = await fetch('http://localhost:3000/api/noticias/apinoticias');
+    const res = await fetch('http://localhost:3000/api/noticias/1');
     const repo = await res.json(res);
     return { props: { noticias: repo } }
 }

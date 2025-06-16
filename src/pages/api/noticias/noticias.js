@@ -208,5 +208,12 @@ export const noticias =[
     "conteudonoticia": "Cinema nacional bate recorde de bilheteria. Esta notícia apresenta um desenvolvimento recente e relevante na área de cultura, abordando impactos sociais, científicos ou culturais. O conteúdo destaca a importância do tema, com foco na inovação, inclusão ou descoberta. A sociedade acompanha com interesse os desdobramentos.",
     "tiponoticia": "cultura",
     "datahoracadastro": "2025-05-22T08:17:34.750955"
+  },
+    {
+    "idnoticia": 31,
+    "titulonoticia": "Teste de API Com Car",
+    "conteudonoticia": "teste",
+    "tiponoticia": "cultura",
+    "datahoracadastro": "2025-05-22T08:17:34.750955"
   }
 ]

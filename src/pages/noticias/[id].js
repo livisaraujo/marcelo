@@ -8,7 +8,7 @@ export async function getServerSideProps(context) {
 export default function Cardcomponent({ noticias }) {
     return <>
         <Container>
-            <Row xs={1} md={1} className="pt-2 g-4">
+            <Row xs={1} md={3} className="pt-2 g-4">
                 {
                     <Cards idnoticia={noticias.idnoticia}
                         titulonoticia={noticias.titulonoticia}

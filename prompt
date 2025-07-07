@@ -1,0 +1,1 @@
+criar uma aplicacao com next node.js, bootstrap, react-bootstrap e express, conectando em um banco pqsql, na pasta api do next a conexao do banco deve retornar os dados em formato json, a index, chama a api e apresenta os dados de filmes: idfilme, imgfilme, duracaofilme, descricaofilme

@@ -10,7 +10,7 @@ export async function getServerSideProps() {
 export default function Home({ noticias }) {
   return <>
    <Container>
-    Bem vindo a IFMS
+    Bem vindo a IFMS - MAIN
             <Row xs={1} md={3} className="pt-2 g-4">
                 {noticias.map(noticia => (
                     <Cards idnoticia = {noticia.idnoticia}

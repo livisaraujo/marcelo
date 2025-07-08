@@ -6,7 +6,7 @@ import styles from '../../styles/Menu.module.css'
 
 export default function Menu() {
   return (
-    <Navbar expand="lg" bg="dark" className={`${styles.degradeMenu}`}>
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark" className={`${styles.degradeMenu}`}>
       <Container>
         <Navbar.Brand href="/">Info 5C</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

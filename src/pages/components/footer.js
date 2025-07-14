@@ -5,7 +5,7 @@ export default function Footer() {
         border-warning
         border-2
         rounded-pill
-        bg-warning-subtle
+        bg-primary-subtle
         fixed-bottom">
             IFMS - Dourados
         </div>

@@ -8,14 +8,14 @@ export default function Cadnoticias() {
       <Form>
         <Form.Group className="mb-3" controlId="titulonoticia">
           <Form.Label>Informe o título da Notícia</Form.Label>
-          <Form.Control type="text" placeholder="Informe o Título" className='bg-warning-subtle' />
+          <Form.Control type="text" placeholder="Informe o Título" className='bg-primary-subtle' />
           <Form.Text className="text-muted">
             Informe o Título da sua Notícia.
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="noticia">
           <Form.Label>Informe a Notícia</Form.Label>
-          <Form.Control as="textarea" rows={3} className='bg-warning-subtle' />
+          <Form.Control as="textarea" rows={3} className='bg-primary-subtle' />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="tiponoticia">
@@ -24,7 +24,7 @@ export default function Cadnoticias() {
               <Form.Label>Informe o tipo da Notícia</Form.Label>
             </Col>
             <Col sm={9}>
-              <Form.Select className='bg-warning-subtle'>
+              <Form.Select className='bg-primary-subtle'>
                 <option>Selecione uma abaixo</option>
                 <option value="1">Ciência</option>
                 <option value="2">Educação</option>

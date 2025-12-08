@@ -2,7 +2,7 @@ import { Container, Row } from "react-bootstrap";
 import Cards from "./components/cards"
 
 export async function getServerSideProps() {
-    const res = await fetch('https://livia-framework.vercel.app/api/noticias/apinoticias');
+    const res = await fetch('apilivia.vercel.app/api/noticias/apinoticias');
     const repo = await res.json(res);
     return { props: { noticias: repo } }
 }
